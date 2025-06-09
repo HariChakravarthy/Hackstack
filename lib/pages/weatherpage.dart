@@ -217,7 +217,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   void _fetchWeather(String city) async {
 
     setState(() {
-      isLoading = true;
+      isLoading = false;
     });
 
     final weather = await _weatherService.getWeatherByCity(city);
